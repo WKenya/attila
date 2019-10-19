@@ -93,7 +93,7 @@ module.exports = function(grunt) {
           '!Gruntfile.js',
           '!package-lock.json'
         ],
-        dest: `dist/${require('./package.json').name}.zip`
+        dest: `dist/${require('./package.json').name}-wes.zip`
       }
     }
   });

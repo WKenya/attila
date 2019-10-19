@@ -34,13 +34,13 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 2em / 1.5em 'Fira Sans', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
-  background: $color-white;
+  	background: $color-white;
 }
 input,
 button,
@@ -654,8 +654,13 @@ figure figcaption {
 	z-index: 5;
 	background: no-repeat scroll center center / cover $color-black;
 	animation: 0.5s ease-in forwards fadein;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
 
   img {
     position: relative;
@@ -700,12 +705,17 @@ figure figcaption {
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
+	text-shadow: 		
+		-1px -1px 0 #FFFFFF,
+		1px -1px 0 #FFFFFF,
+		-1px 1px 0 #FFFFFF,
+		1px 1px 0 #FFFFFF;
 }
 .home-template .blog-name {
 	font-size: 3em;
 }
 .has-cover .blog-name {
-	color: $color-white;
+	color: $color-black;
 }
 .blog-name a {
 	text-decoration: none;
@@ -720,12 +730,17 @@ figure figcaption {
 	padding: 0;
 	font-size: 1em;
 	line-height: 1.5em;
+	text-shadow: 		
+		-1px -1px 0 #FFFFFF,
+		1px -1px 0 #FFFFFF,
+		-1px 1px 0 #FFFFFF,
+		1px 1px 0 #FFFFFF;
 }
 .home-template .blog-description {
 	font-size: 1.5em;
 }
 .has-cover .blog-description {
-	color: $color-white;
+	color: $color-black;
 }
 
 #wrapper {

@@ -7,6 +7,9 @@
     "ghost": ">=2.1.0",
     "ghost-api": "v2"
   },
+  "scripts": {
+    "publish" : "grunt build && grunt zip"
+  },
   "license": "MIT",
   "screenshots": {
     "desktop": "src/screenshot-desktop.jpg",
